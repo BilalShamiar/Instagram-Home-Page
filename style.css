@@ -204,5 +204,8 @@ font-size: 30px;
 }
 .footer{
     align-items: flex-end;
+    position:fixed;
+    padding-bottom:0px;
 }
 }
+
