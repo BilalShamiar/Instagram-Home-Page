@@ -205,8 +205,9 @@ font-size: 30px;
 .footer{
     align-items: flex-end;
     position:fixed;
-    padding-bottom:30px;
+    margin-bottom:30px;
 }
 }
+
 
 
