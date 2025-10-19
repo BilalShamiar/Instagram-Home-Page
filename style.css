@@ -157,7 +157,7 @@ padding:5px 15px;
 .footer i{
 font-size: 30px;
 }
-@media (max-width : 400px) {
+@media (max-width : 600px) {
     body{
         width: 100vw !important;
         height: 100vh;
@@ -201,5 +201,8 @@ font-size: 30px;
 }
 .account{
     margin-top: 5%;
+}
+.footer{
+    align-items: flex-end;
 }
 }
