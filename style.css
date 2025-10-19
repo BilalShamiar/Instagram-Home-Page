@@ -1,0 +1,205 @@
+@font-face {
+    font-family: "roman";
+    src: url(HelveticaNeue-Roman.otf);
+}
+*{
+               margin: 0;
+               padding: 0;
+               box-sizing: border-box;
+               font-family: "roman";
+               color: #fff;
+            
+            }
+           
+            html , body{
+              height: 100%;
+               width: 100%;
+            }
+body{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#card{
+    width: 350px;
+    height: 700px;
+    background-color: #111;
+    position: relative;
+    overflow: hidden;
+}
+#container{
+    height: 120px;
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    padding: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+#container::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid red;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 10px;
+}
+.story img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.nav img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.part2 i{
+font-size: 30px;
+}
+#full-screen{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.image{
+    width: 100%;
+    height: 250px;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    background-image: url(Images/poster.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.image i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    font-size: 50px;
+    opacity: 0;
+    transition: transform ease 0.5s;
+}
+.account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    margin-top: 5%;
+}
+.who{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.who img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.who h6{
+    font-size: 15px;
+}
+
+.soe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+}
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.soe i{
+    font-size: 20px;
+}
+.soe i:hover{
+    cursor: pointer;
+    color: #dadada;
+}
+.footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+padding:5px 15px;
+}
+.footer i{
+font-size: 30px;
+}
+@media (max-width : 400px) {
+    body{
+        width: 100vw !important;
+        height: 100vh;
+    }
+    #card{
+        width: 100% !important;
+        height: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+    #container{
+        width: 100%;
+        height: 150px;
+        padding: 25px;
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+        border-bottom: none;
+    }
+    .story{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+    .story img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    #full-screen{
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.image{
+    height: 350px;
+}
+.account{
+    margin-top: 5%;
+}
+}
